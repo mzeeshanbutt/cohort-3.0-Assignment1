@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e0e0; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.mainCard {
+  width: 98vw;
+  height: 94vh;
+  background-color: white;
+  border-radius: 35px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  position: relative;   
+  overflow: hidden; 
+}
+
+.backgroundLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.backgroundYellow{
+    flex: 1.7;
+background-color: rgb(250, 221, 0);
+}
+.backgroundBeige{
+    flex: 1;
+background-color: beige;
+}
+
+.contentLayer{
+    position: relative;
+z-index: 10;
+width: 100%;
+height: 100%;
+padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pokemonLogo{
+    height: 150px;
+    /* margin-left: 10px; */
+}
+
+.hamburgerMenuIconButton{
+    cursor: pointer;
+    height: 65px;
+    width: 70px;
+    border-radius: 100px;
+
+    border: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.hamburgerMenuIconButton:hover{
+    background-color: rgb(255, 255, 0);
+    transition: ease-in 0.3s;
+}
+
+.mainBody{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.textContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.subtitle{
+    font-weight: 500;
+}
+.pokemonName{
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.pokemonDescription{
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(46, 46, 46);
+    margin-bottom: 40px;
+
+}
+
+.pageNumbers{
+    font-weight: 700;
+}
+
+.visualContent{
+    flex:1;
+    position: relative;
+}
+
+.pickachuImage{
+    position: absolute;
+    left: -45px;
+    width: 70%;
+    top: -8%;
+    z-index: 20;
+    /* transform: translate(-50%); */
+}
+
+.watermark{
+    height: 300px;
+    width: 300px;
+    transform: translate(10%, 20%);
+    opacity: 0.09;
+    /* color: black; */
+    
+}
+
+.sideNavigationDots{
+    position:absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-150%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 30;
+}
+
+.dot{
+    width: 10px;
+  height: 10px;
+  background-color: #000; 
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.3
+}
+
+.activeDot{
+     width: 10px;
+  height: 10px;
+  background-color: #000; 
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2); 
+}
